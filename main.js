@@ -1,4 +1,18 @@
 //Problem !
+// let domain = "mimoniruzzaman.com";
+
+// let newDomain = domain.indexOf(".");
+// let check = domain.slice(+0, newDomain);
+// console.log(check);
+
+function domain(text) {
+  let domainName = text.indexOf(".");
+  let check = text.slice(+0, domainName);
+  return check;
+}
+console.log(domain("mimoniruzaman.com"));
+
+//Problem !
 let word = "Javascript Is Best Popular Language !!";
 let spliteWord = word.split("").reverse().join("");
 console.log(spliteWord);
