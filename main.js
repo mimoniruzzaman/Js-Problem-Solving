@@ -10,7 +10,7 @@ function domain(text) {
   let check = text.slice(+0, domainName);
   return check;
 }
-console.log(domain("mimoniruzaman.com"));
+console.log(domain("mimoniruzaman.com")); // Output: mimoniruzzaman;
 
 //Problem !
 let word = "Javascript Is Best Popular Language !!";
