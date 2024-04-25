@@ -35,6 +35,17 @@ function extraDomain(email) {
 }
 console.log(extraDomain("Developer@gmail.com")); // Output: gmail.com;
 
+//Problem !
+function text(sentence, word) {
+  let anyWord = sentence.toLowerCase().includes(word.toLowerCase());
+  if (anyWord) {
+    return `${word} Is Present In The Sentence`;
+  } else {
+    return `Is Not Found `;
+  }
+}
+console.log(text("Hello", "hello"));
+
 // Problem !
 let sentence = "Javascript Problem Solving";
 let newSentence = sentence.includes("Javascript");
