@@ -76,6 +76,15 @@ console.log(
 ); // Output: 'Pupolar', 'Laguage';
 
 // Problem !
+function word(newText, n = 2) {
+  return newText
+    .split(" ")
+    .filter((word) => word.length === n)
+    .join(" ");
+}
+console.log(word("Hello Javascript Is A Most Pupolar Language!"));
+
+// Problem !
 let fruits = "Apple is the best Fruits !";
 let newFruits = fruits.split("A").join("");
 console.log(newFruits); // Output: pple is the best Fruits !
