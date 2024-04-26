@@ -122,6 +122,6 @@ console.log(duplicatRemove); // Output:'Banana', 'Coconat', 'Paineaple', 'Orange
 
 //Js Set Method !
 function removeItem(arr) {
-  return [...new Set(arr)];
+  return [...new Set(arr)]; // Remove item: morden js !
 }
 console.log(removeItem(arrayFruits)); // Output: 'Banana', 'Coconat', 'Paineaple', 'Orange', 'Apple';
