@@ -96,6 +96,13 @@ function removeSentence(sentence, letter) {
 console.log(removeSentence("Apple", "e")); // Output: Appe;
 
 // Problem !
+function allSentence(sentence, letter) {
+  let newSentence = sentence.toLowerCase().split(letter.toLowerCase()).join("");
+  return newSentence;
+}
+console.log(allSentence("Apple", "P")); // Output: ale !
+
+// Problem !
 let arrayFruits = [
   "Banana",
   "Coconat",
