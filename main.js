@@ -60,7 +60,7 @@ function text(sentence, word) {
     return `Is Not Found `;
   }
 }
-console.log(text("Hello", "hello"));
+console.log(text("Hello", "hello")); // Output: hello Is Present In The Sentence
 
 
 
@@ -69,6 +69,9 @@ console.log(text("Hello", "hello"));
 let sentence = "Javascript Problem Solving";
 let newSentence = sentence.includes("Javascript");
 console.log(newSentence); // Output: true;
+
+
+
 
 
 function checkCentence(sentence, word) {
@@ -90,11 +93,14 @@ let newText = "Javascript Is One Of The Most Pupolar Programming Laguage";
 let split = newText.split(" ").filter((word) => word.length <= 4);
 console.log(split); // Output: 'Is', 'One', 'Of', 'The', 'Most';
 
+
+
+
+
 function getLongWord(sentence, number) {
   let split = sentence.split(" ").filter((word) => word.length === number);
   return split;
 }
-
 console.log(
   getLongWord("Javascript Is One Of The Most Pupolar Programming Laguage", 7)
 ); // Output: 'Pupolar', 'Laguage';
@@ -120,6 +126,9 @@ console.log(word("Hello Javascript Is A Most Pupolar Language!"));
 let fruits = "Apple is the best Fruits !";
 let newFruits = fruits.split("A").join("");
 console.log(newFruits); // Output: pple is the best Fruits !
+
+
+
 
 function removeSentence(sentence, letter) {
   let fruits = sentence.split(letter).join("");
@@ -153,6 +162,9 @@ let arrayFruits = [
   "Apple",
 ];
 console.log(arrayFruits); // Output: 'Banana', 'Coconat', 'Paineaple', 'Orange', 'Banana', 'Apple', 'Orange', 'Apple';
+
+
+
 
 let duplicatRemove = arrayFruits.filter(
   (word, index) => arrayFruits.indexOf(word) === index
