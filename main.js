@@ -1,9 +1,12 @@
 //Problem !
-// let domain = "mimoniruzzaman.com";
+let domain = "mimoniruzzaman.com";
 
-// let newDomain = domain.indexOf(".");
-// let check = domain.slice(+0, newDomain);
-// console.log(check);
+let newDomain = domain.indexOf(".");
+let check = domain.slice(+0, newDomain);
+console.log(check); // Output: mimoniruzzaman !
+
+
+
 
 function domain(text) {
   let domainName = text.indexOf(".");
@@ -12,28 +15,41 @@ function domain(text) {
 }
 console.log(domain("mimoniruzaman.com")); // Output: mimoniruzzaman;
 
+
+
+
 //Problem !
 let word = "Javascript Is Best Popular Language !!";
 let spliteWord = word.split("").reverse().join("");
-console.log(spliteWord);
+console.log(spliteWord); // Output: !! egaugnaL ralupoP tseB sI tpircsavaJ 
+
+
+
 
 function reverstring(word) {
   return word.split("").reverse().join("");
 }
+console.log(reverstring()); // Output: Hello My Name Is Moniruzzaman
 
-let reverseWord = reverstring("Popular Language");
-console.log(reverseWord); // Output: egaugnaL ralupoP;
+
+
 
 // Problem !
 let email = "moniruzzaman@gmail.com";
 let newIndex = email.indexOf("@");
 console.log(email.substring(newIndex + 1)); // Output: gmail.com;
 
+
+
+
 function extraDomain(email) {
   let atIndex = email.indexOf("@");
   return email.substring(atIndex + 1);
 }
 console.log(extraDomain("Developer@gmail.com")); // Output: gmail.com;
+
+
+
 
 //Problem !
 function text(sentence, word) {
@@ -46,10 +62,14 @@ function text(sentence, word) {
 }
 console.log(text("Hello", "hello"));
 
+
+
+
 // Problem !
 let sentence = "Javascript Problem Solving";
 let newSentence = sentence.includes("Javascript");
 console.log(newSentence); // Output: true;
+
 
 function checkCentence(sentence, word) {
   let wordSentence = sentence.includes(word);
@@ -60,6 +80,10 @@ function checkCentence(sentence, word) {
   }
 }
 console.log(checkCentence("Javascript Problem Solving", "Javascript")); // Output: Javascript is present in the sentence`
+
+
+
+
 
 // Problem !
 let newText = "Javascript Is One Of The Most Pupolar Programming Laguage";
@@ -75,6 +99,10 @@ console.log(
   getLongWord("Javascript Is One Of The Most Pupolar Programming Laguage", 7)
 ); // Output: 'Pupolar', 'Laguage';
 
+
+
+
+
 // Problem !
 function word(newText, n = 2) {
   return newText
@@ -83,6 +111,10 @@ function word(newText, n = 2) {
     .join(" ");
 }
 console.log(word("Hello Javascript Is A Most Pupolar Language!"));
+
+
+
+
 
 // Problem !
 let fruits = "Apple is the best Fruits !";
@@ -95,12 +127,19 @@ function removeSentence(sentence, letter) {
 }
 console.log(removeSentence("Apple", "e")); // Output: Appe;
 
+
+
+
+
 // Problem !
 function allSentence(sentence, letter) {
   let newSentence = sentence.toLowerCase().split(letter.toLowerCase()).join("");
   return newSentence;
 }
 console.log(allSentence("Apple", "P")); // Output: ale !
+
+
+
 
 // Problem !
 let arrayFruits = [
@@ -119,6 +158,10 @@ let duplicatRemove = arrayFruits.filter(
   (word, index) => arrayFruits.indexOf(word) === index
 );
 console.log(duplicatRemove); // Output:'Banana', 'Coconat', 'Paineaple', 'Orange', 'Apple';
+
+
+
+
 
 //Js Set Method !
 function removeItem(arr) {
