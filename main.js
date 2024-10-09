@@ -116,7 +116,7 @@ function word(newText, n = 2) {
     .filter((word) => word.length === n)
     .join(" ");
 }
-console.log(word("Hello Javascript Is A Most Pupolar Language!"));
+console.log(word("Hello Javascript Is A Most Pupolar Language!")); // Output: Is !
 
 
 
