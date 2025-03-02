@@ -129,6 +129,7 @@ console.log(
 
 // Problem !
 function word(newText, n = 2) {
+  // jodi kno value pass na kora by default value (2) thakbe !
   return newText
     .split(" ")
     .filter((word) => word.length === n)
