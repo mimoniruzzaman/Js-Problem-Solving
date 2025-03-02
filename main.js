@@ -24,13 +24,31 @@ let spliteWord = word.split("").reverse().join("");
 console.log(spliteWord); // Output: !! egaugnaL ralupoP tseB sI tpircsavaJ 
 
 
+// Problem !
+// Kno text Oulta korar Jonno ay way use korta pari !
+function string(textOne) {
+  let text = textOne.split(" ").reverse().join(" ");
+  document.getElementById("demo").innerHTML = text;
+}
+string("Hello My name is Moniruzzaman"); // Output = Moniruzzaman is name My Hello !
+
+function string(textOne) {
+  let text = textOne.split("").reverse().join("");
+  document.getElementById("demo").innerHTML = text;
+}
+string("Hello My name is Moniruzzaman"); // Output = namazzurinoM si eman yM olleH !
+
+function string(textOne) {
+  let text = textOne.split(" ").reverse().join("/");
+  document.getElementById("demo").innerHTML = text;
+}
+string("Hello My name is Moniruzzaman"); // Output = Moniruzzaman/is/name/My/Hello !
 
 
 function reverstring(word) {
   return word.split("").reverse().join("");
 }
 console.log(reverstring()); // Output: Hello My Name Is Moniruzzaman
-
 
 
 
